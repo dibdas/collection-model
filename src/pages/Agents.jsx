@@ -105,7 +105,7 @@ const Agents = () => {
                     required
                   />
                 </div>
-                <div className="flex gap-3 justify-end">
+                <div className="flex gap-4 justify-end">
                   <Button type="button" variant="outline" onClick={handleClose}>
                     Cancel
                   </Button>

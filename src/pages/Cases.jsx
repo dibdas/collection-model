@@ -55,7 +55,7 @@ const Cases = () => {
           <CardHeader>
             <div className="flex flex-col md:flex-row gap-4 items-start md:items-center justify-between">
               <CardTitle>Cases ({filteredCases.length})</CardTitle>
-              <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+              <div className="flex flex-col sm:flex-row gap-4 w-full md:w-auto">
                 <div className="relative flex-1 md:w-64">
                   <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-4 w-4 text-muted-foreground" />
                   <Input

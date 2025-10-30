@@ -59,7 +59,7 @@ const CaseDetailModal = () => {
     <Dialog open={!!selectedCase} onOpenChange={handleClose}>
     
         
-<DialogContent className="w-full sm:max-w-md md:max-w-lg lg:max-w-2xl max-h-[80vh] md:max-h-[60vh] overflow-y-auto">
+<DialogContent className="w-full sm:max-w-md md:max-w-lg lg:max-w-2xl max-h-[90vh] md:max-h-[70vh] overflow-y-auto">
 
         <DialogHeader>
           <DialogTitle className="flex items-center justify-between px-3">
@@ -71,13 +71,14 @@ const CaseDetailModal = () => {
         </DialogHeader>
 
         <Tabs defaultValue="overview" className="w-full">
-          <TabsList className="grid w-full grid-cols-3">
+          <TabsList className="grid w-full grid-cols-3 mb-6">
             <TabsTrigger value="overview">Overview</TabsTrigger>
             <TabsTrigger value="payments">Payments</TabsTrigger>
             <TabsTrigger value="timeline">Timeline</TabsTrigger>
           </TabsList>
 
-          <TabsContent value="overview" className="space-y-4">
+
+          <TabsContent value="overview" className="space-y-4 mt-3 overflow-y-auto max-h-[55vh]">
             <div className="grid md:grid-cols-2 gap-6">
               <div className="space-y-4">
                 <h3 className="font-semibold text-lg">Borrower Information</h3>
@@ -168,8 +169,10 @@ const CaseDetailModal = () => {
               </Button>
             </div>
           </TabsContent>
+         
+   
 
-          <TabsContent value="payments" className="space-y-3">
+          <TabsContent value="payments" className="space-y-3 overflow-y-auto max-h-[55vh]">
             <h3 className="font-semibold">Payment History</h3>
             <div className="space-y-2">
               {selectedCase.paymentHistory.map((payment, i) => (
@@ -188,8 +191,9 @@ const CaseDetailModal = () => {
               ))}
             </div>
           </TabsContent>
-
-          <TabsContent value="timeline" className="space-y-3">
+   
+          
+          <TabsContent value="timeline" className="space-y-3 overflow-y-auto max-h-[55vh] ">
             <h3 className="font-semibold">Case Timeline</h3>
             <div className="space-y-4">
               {selectedCase.timeline.map((event, i) => (
@@ -210,6 +214,8 @@ const CaseDetailModal = () => {
               ))}
             </div>
           </TabsContent>
+          
+        
         </Tabs>
       </DialogContent>
     </Dialog>
