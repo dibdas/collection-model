@@ -64,7 +64,6 @@ const Index = () => {
           </div>
 
           <div className="pt-8 text-sm text-muted-foreground">
-            <p>Frontend Engineer Assessment Project</p>
             <p className="mt-2">Built with React • Redux • Tailwind CSS • Recharts</p>
           </div>
         </div>

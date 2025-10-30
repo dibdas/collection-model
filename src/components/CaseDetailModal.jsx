@@ -14,7 +14,6 @@ import { toast } from 'sonner';
 const CaseDetailModal = () => {
   const dispatch = useDispatch();
   const selectedCase = useSelector((state) => state.cases.selectedCase);
-  console.log(selectedCase);
   
   const [newNote, setNewNote] = useState('');
   const [newStatus, setNewStatus] = useState('');

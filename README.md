@@ -16,7 +16,7 @@ A modern, responsive case management dashboard built with React, featuring agent
 
 - **Frontend Framework**: React 18.3
 - **Build Tool**: Vite 5.4
-- **Language**: JavaScript/TypeScript
+- **Language**: JavaScript
 - **Styling**: Tailwind CSS
 - **UI Components**: shadcn/ui
 - **State Management**: Redux Toolkit
@@ -35,8 +35,8 @@ A modern, responsive case management dashboard built with React, featuring agent
 
 1. Clone the repository:
 ```bash
-git clone <git@github.com:dibdas/collection-model.git>
-cd <collection model>
+git clone git@github.com:dibdas/collection-model.git
+cd collection model
 ```
 
 2. Install dependencies:
