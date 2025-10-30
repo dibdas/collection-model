@@ -1,70 +1,128 @@
-# Welcome to your Debt Collection project
+# Case Management System
 
-## Project info
+A modern, responsive case management dashboard built with React, featuring agent tracking, activity monitoring, and comprehensive case management capabilities.
 
-**URL**: 
+## Features
 
-## How can I edit this code?
+- 📊 **Dashboard Analytics** - Real-time KPI tracking and data visualization
+- 📋 **Case Management** - Comprehensive case tracking and detail views
+- 👥 **Agent Management** - Monitor agent performance and status
+- 📈 **Activity Tracking** - Track and analyze system activities
+- 🔐 **Authentication** - Secure user authentication and authorization
+- 🌓 **Dark/Light Mode** - Built-in theme switching
+- 📱 **Responsive Design** - Optimized for mobile, tablet, and desktop
 
-There are several ways of editing your application.
+## Tech Stack
 
+- **Frontend Framework**: React 18.3
+- **Build Tool**: Vite 5.4
+- **Language**: JavaScript/TypeScript
+- **Styling**: Tailwind CSS
+- **UI Components**: shadcn/ui
+- **State Management**: Redux Toolkit
+- **Routing**: React Router DOM
+- **Charts**: Recharts
+- **Icons**: Lucide React
 
-Simply visit the [ Project]() and start prompting.
+## Getting Started
 
+### Prerequisites
 
+- Node.js (v16 or higher)
+- npm or yarn
 
-**Use your preferred IDE**
+### Installation
 
+1. Clone the repository:
+```bash
+git clone <git@github.com:dibdas/collection-model.git>
+cd <collection model>
+```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+2. Install dependencies:
+```bash
+npm install
+```
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+3. Start the development server:
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. Open your browser and navigate to `http://localhost:8080`
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Build for Production
 
-**Use GitHub Codespaces**
+```bash
+npm run build
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/       # Reusable UI components
+│   ├── ui/          # shadcn/ui components
+│   ├── Layout.jsx   # Main layout with navigation
+│   ├── KPICard.jsx  # Dashboard KPI cards
+│   └── CaseDetailModal.jsx
+├── pages/           # Application pages
+│   ├── Index.jsx    # Landing page
+│   ├── Login.jsx    # Authentication page
+│   ├── Dashboard.jsx
+│   ├── Cases.jsx
+│   ├── Agents.jsx
+│   └── Activity.jsx
+├── contexts/        # React contexts
+│   ├── AuthContext.jsx
+│   └── ThemeContext.jsx
+├── store/           # Redux store and slices
+│   ├── store.js
+│   └── slices/
+├── services/        # API services and mock data
+└── hooks/           # Custom React hooks
+```
 
-This project is built with:
+## Authentication
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+The app includes a protected route system. Users must log in to access:
+- Dashboard
+- Cases
+- Agents
+- Activity pages
+
+## Responsive Design
+
+The application is fully responsive with:
+- **Mobile**: Hamburger menu navigation
+- **Tablet**: Optimized layouts
+- **Desktop**: Full sidebar navigation with expanded features
+
+Maximum content width is set to `max-w-7xl` for optimal readability on large screens.
+
+## Theme Support
+
+Built-in dark and light mode support using `next-themes`:
+- Toggle available in the header
+- Persistent theme selection
+- Smooth transitions between themes
+
+## Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build
+- `npm run lint` - Run ESLint
+
+## Browser Support
+
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
 
 
 
+## Support
 
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-
-# collection-model
-# collection-model
+For support, please open an issue in the repository or contact the development team.
